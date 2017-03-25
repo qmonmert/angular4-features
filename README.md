@@ -15,3 +15,4 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 * ng g c component2
 * ng g c component3
 * ng g c component4
+* yarn add bootstrap@3 jquery
