@@ -1,0 +1,7 @@
+<h3>Component 4</h3>
+
+<form #f="ngForm">
+    <input type="email" ngModel name="email" required email>
+    <button [disabled]="!f.valid">Submit</button>
+    <p>Form state : {{ f.valid ? 'VALID' : 'INVALID' }}</p>
+</form>

@@ -2,8 +2,7 @@ import { Component, Renderer2 } from '@angular/core';
 
 @Component({
   selector: 'app-component3',
-  templateUrl: './component3.component.html',
-  styleUrls: ['./component3.component.css']
+  templateUrl: './component3.component.html'
 })
 export class Component3Component {
 
