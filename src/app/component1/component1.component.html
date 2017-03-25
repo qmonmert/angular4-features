@@ -1,0 +1,10 @@
+<h3>Component 1</h3>
+
+<div *ngIf="authenticated; else notAuthenticated">
+    The user is logged in.
+    <button (click)="logout()">Log out</button>
+</div>
+<ng-template #notAuthenticated>
+    Please login to continue.
+    <button (click)="login()">Log in</button>
+</ng-template>
