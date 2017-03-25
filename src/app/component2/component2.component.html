@@ -1,11 +1,18 @@
-<h3>Component 2</h3>
+<div class="container">
+    <div class="panel panel-primary">
+        <div class="panel-heading">Component 2</div>
+        <div class="panel-body">
 
-<div *ngIf="authenticated; then isAuthenticated else notAuthenticated"></div>
-<ng-template #isAuthenticated>
-    The user is logged in.
-    <button (click)="logout()">Log out</button>
-</ng-template>
-<ng-template #notAuthenticated>
-    Please login to continue.
-    <button (click)="login()">Log in</button>
-</ng-template>
+            <div *ngIf="authenticated; then isAuthenticated else notAuthenticated"></div>
+            <ng-template #isAuthenticated>
+                The user is logged in.
+                <button class="btn btn-primary" (click)="logout()">Log out</button>
+            </ng-template>
+            <ng-template #notAuthenticated>
+                Please login to continue.
+                <button class="btn btn-primary" (click)="login()">Log in</button>
+            </ng-template>
+
+        </div>
+    </div>
+</div>

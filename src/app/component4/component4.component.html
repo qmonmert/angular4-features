@@ -1,7 +1,15 @@
-<h3>Component 4</h3>
+<div class="container">
+    <div class="panel panel-primary">
+        <div class="panel-heading">Component 4</div>
+        <div class="panel-body">
 
-<form #f="ngForm">
-    <input type="email" ngModel name="email" required email>
-    <button [disabled]="!f.valid">Submit</button>
-    <p>Form state : {{ f.valid ? 'VALID' : 'INVALID' }}</p>
-</form>
+            <!--Feature-->
+            <form #f="ngForm">
+                <input type="email" ngModel name="email" required email>
+                <button class="btn btn-primary" [disabled]="!f.valid">Submit</button>
+                <p>Form state : {{ f.valid ? 'VALID' : 'INVALID' }}</p>
+            </form>
+
+        </div>
+    </div>
+</div>
