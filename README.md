@@ -18,3 +18,4 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 * yarn add bootstrap@3 jquery
 * ng g c component5
 * yarn install (add : "@angular/animations": "^4.0.0" in package.json)
+* ng g c component6
