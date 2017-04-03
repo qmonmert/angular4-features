@@ -1,0 +1,16 @@
+<div class="container">
+    <div class="panel panel-primary">
+        <div class="panel-heading">Component 8</div>
+        <div class="panel-body">
+
+            <!--Feature-->
+            <div *ngIf="user | async; let user; else loading">
+                {{user.firstName}} {{user.lastName}}
+            </div>
+            <ng-template #loading>
+                Loading User Data ...
+            </ng-template>
+
+        </div>
+    </div>
+</div>
